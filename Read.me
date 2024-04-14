@@ -2,4 +2,4 @@ podman run --network=host --detach -p 8888:8888 -p 4040:4040 -p 4041:4041 quay.i
 
 podman inspect --format='{{.Config.Entrypoint}}' <container_name_or_id>
 
-apt update; apt install iputils-ping
+apt update; apt install iputils-ping net-tools
